@@ -1,0 +1,617 @@
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a1d6b
+        a80e2dc com.android.settings/.Settings$PublicVolumeSettingsActivity filter 27cfe5
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a750c8
+        a80e2dc com.android.settings/.Settings$PublicVolumeSettingsActivity filter 27cfe5
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a750c8
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a1d6b
+        ae57f99 com.android.settings/.Settings$PrintJobSettingsActivity filter 9ee225e
+        96c600f com.android.settings/.localepicker.AppLocalePickerActivity filter 303a89c
+        f327f63 com.android.settings/.datausage.AppDataUsageActivity filter 4e29760
+        2d9e419 com.android.settings/.fuelgauge.RequestIgnoreBatteryOptimizations filter e9becde
+        59ba8d5 com.android.settings/.applications.InstalledAppDetails filter a75f8ea
+        50e77db com.android.settings/.applications.InstalledAppOpenByDefaultActivity filter e0ff278
+          Action: "com.android.settings.APP_OPEN_BY_DEFAULT_SETTINGS"
+        72bcfa1 com.android.settings/.Settings$AppUsageAccessSettingsActivity filter e70a5c6
+        24d2d2a com.android.settings/.Settings$AppPictureInPictureSettingsActivity filter 71b371b
+        785e2cd com.android.settings/.Settings$AppInteractAcrossProfilesSettingsActivity filter 6aa3782
+        3ef6e93 com.android.settings/.Settings$ZenAccessDetailSettingsActivity filter 9550ed0
+        98fc4a6 com.android.settings/.Settings$PremiumSmsAccessActivity filter e857ee7
+        3acfceb com.android.settings/.Settings$OverlaySettingsActivity filter 8ab30e1
+        8ce8e06 com.android.settings/.Settings$AppDrawOverlaySettingsActivity filter ddc7cc7
+        cb58492 com.android.settings/.Settings$AppWriteSettingsActivity filter 29a1e63
+        2a357de com.android.settings/.Settings$AlarmsAndRemindersAppActivity filter 8063dbf
+        f0913ea com.android.settings/.Settings$ManageAppExternalSourcesActivity filter beaf6db
+        ca43642 com.android.settings/.Settings$AppManageExternalStorageActivity filter 37f6653
+        5c3748e com.android.settings/.Settings$AppMediaManagementAppsActivity filter 59014af
+        5aeb3c1 com.android.settings/.fuelgauge.AdvancedPowerUsageDetailActivity filter e6d8766
+        f3c1d3e com.android.settings/.applications.autofill.AutofillPickerTrampolineActivity filter 975879f
+        29f0cab com.android.settings/.wifi.dpp.WifiDppConfiguratorActivity filter eed26a1
+        a80e2dc com.android.settings/.Settings$PublicVolumeSettingsActivity filter 27cfe5
+        c43aebf com.android.settings/.slices.SliceDeepLinkSpringBoard filter ec9c98c
+          Authority: "com.android.settings.slices": -1
+        3fada49 com.android.settings/.backup.transport.TransportActivity filter dc75f4e
+          Authority: "com.android.settings.backup.transport": -1
+        d4f1f75 com.android.settings/.biometrics.fingerprint.SetupFingerprintEnrollIntroduction filter fc43b0a
+        dbfec12 com.android.settings/.wifi.WifiPickerActivity filter c912fe3
+        7160971 com.android.settings/.RegulatoryInfoDisplayActivity filter 9a8a356
+        2d00124 com.android.settings/.Settings$ManageExternalStorageActivity filter 8c1a48d
+      com.android.settings.action.SUPPORT_SETTINGS:
+        15378c0 com.android.settings/.support.SupportDashboardActivity filter 3d519f9
+          Action: "com.android.settings.action.SUPPORT_SETTINGS"
+        90a5efb com.android.settings/.ManualDisplayActivity filter 37d1b18
+        3607b com.android.settings/.Settings$MobileNetworkActivity filter 2f7be98
+      com.android.settings.action.SETTINGS:
+        e8a8561 com.android.settings/.Settings$DevelopmentSettingsDashboardActivity filter 84b2547
+          Action: "com.android.settings.action.SETTINGS"
+        df62f0f com.android.settings/.Settings$UserSettingsActivity filter ba269a5
+          Action: "com.android.settings.action.SETTINGS"
+        141886f com.android.settings/.Settings$crDroidSettingsLayoutActivity filter 553197c
+          Action: "com.android.settings.action.SETTINGS"
+        915efd7 com.android.settings/.wifi.RequestToggleWiFiActivity filter 4b4d0c4
+        dcaf107 com.android.settings/.Settings$NotificationAccessSettingsActivity filter 742f234
+        df62f0f com.android.settings/.Settings$UserSettingsActivity filter 8c2cb9c
+      com.android.settings.USER_DICTIONARY_INSERT:
+        1665f15 com.android.settings/.inputmethod.UserDictionaryAddWordActivity filter 8cd122a
+          Action: "com.android.settings.USER_DICTIONARY_INSERT"
+        dc763f3 com.android.settings/.Settings$PreviouslyConnectedDevicesActivity filter f4bc8b0
+        a5c84b6 com.android.settings/.ActionDisabledByAppOpsDialog filter 49825b7
+        f0d23d com.android.settings/.Settings$DisplaySettingsActivity filter ec64a32
+          Action: "com.android.settings.DISPLAY_SETTINGS"
+        e7e517 com.android.settings/.Settings$DataSaverSummaryActivity filter 153bd04
+      com.android.settings.BLUETOOTH_DEVICE_DETAIL_SETTINGS:
+        534febb com.android.settings/.Settings$BluetoothDeviceDetailActivity filter ccf9fd8
+          Action: "com.android.settings.BLUETOOTH_DEVICE_DETAIL_SETTINGS"
+        8d97145 com.android.settings/.Settings$LocationSettingsActivity filter 576709a
+        5d8957 com.android.settings/.Settings$ConnectedDeviceDashboardActivity filter 7f62c44
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter c4851ee
+        3607b com.android.settings/.Settings$MobileNetworkActivity filter 2f7be98
+        280666d com.android.settings/.security.CredentialStorage filter 52f02a2
+        e8a8561 com.android.settings/.Settings$DevelopmentSettingsDashboardActivity filter fa48886
+          Action: "com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+        944b174 com.android.settings/.development.DevelopmentSettingsDisabledActivity filter 409169d
+          Action: "com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+        2b0f31 com.android.settings/.Settings$BluetoothBroadcastActivity filter 1dc9616
+        6d71614 com.android.settings/.homepage.SettingsHomepageActivity filter 9c6aebd
+      com.android.settings.SETUP_LOCK_SCREEN:
+        bff3df1 com.android.settings/.password.SetupChooseLockGeneric filter 9f2fdd6
+          Action: "com.android.settings.SETUP_LOCK_SCREEN"
+        9b64207 com.android.settings/.Settings$PhysicalKeyboardActivity filter 3226f34
+        b70ed59 com.android.settings/.Settings$VrListenersSettingsActivity filter 33c5d1e
+      com.android.settings.sim.SIM_SUB_INFO_SETTINGS:
+        65713ac com.android.settings/.Settings$NetworkDashboardActivity filter e19f875
+          Action: "com.android.settings.sim.SIM_SUB_INFO_SETTINGS"
+        1dd5658 com.android.settings/.accounts.AddAccountSettings filter b9cc3b1
+        c2c7a02 com.android.settings/.Settings$AccessibilityInversionSettingsActivity filter ba8bf13
+        13101ca com.android.settings/.Settings$ManagedProfileSettingsActivity filter ca57f3b
+        4194dab com.android.settings/.Settings$UsageAccessSettingsActivity filter 1b25c08
+        d3d36d3 com.android.settings/.bluetooth.BluetoothPermissionActivity filter 3f6d210
+      com.android.settings.TRUSTED_CREDENTIALS_USER:
+        73f789f com.android.settings/.Settings$TrustedCredentialsSettingsActivity filter 6c0fdec
+          Action: "com.android.settings.TRUSTED_CREDENTIALS"
+          Action: "com.android.settings.TRUSTED_CREDENTIALS_USER"
+        1530b9 com.android.settings/.biometrics.BiometricEnrollActivity filter 5f44cfe
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter fd5968f
+        cb6fd8b com.android.settings/.password.ConfirmDeviceCredentialActivity filter fac7e68
+        7dc78f com.android.settings/.applications.specialaccess.deviceadmin.DeviceAdminAdd filter ff5ba1c
+        d3d36d3 com.android.settings/.bluetooth.BluetoothPermissionActivity filter 3f6d210
+      com.android.settings.WIFI_TETHER_SETTINGS:
+        31ef11f com.android.settings/.Settings$WifiTetherSettingsActivity filter e9e4c6c
+          Action: "com.android.settings.WIFI_TETHER_SETTINGS"
+        9da1c2e com.android.settings/.SettingsLicenseActivity filter 833cf
+        e74fb21 com.android.settings/.nfc.PaymentDefaultDialog filter 8d92b46
+        69b96a3 com.android.settings/.Settings$NotificationAssistantSettingsActivity filter d36fda0
+        92b9a94 com.android.settings/.Settings$SoundSettingsActivity filter 322193d
+          Action: "com.android.settings.SOUND_SETTINGS"
+        dfeaf6c com.android.settings/.Settings$AccountSyncSettingsActivity filter 86bc935
+        1dd7d3 com.android.settings/.wifi.WifiNoInternetDialog filter 4a95f10
+        6a0e9a8 com.android.settings/.Settings$ScanningSettingsActivity filter 9a4dcc1
+        6042cb2 com.android.settings/.Settings filter 9117403
+        65713ac com.android.settings/.Settings$NetworkDashboardActivity filter a40a00a
+        3607b com.android.settings/.Settings$MobileNetworkActivity filter 2f7be98
+        5e5c12d com.android.settings/.Settings$BluetoothSettingsActivity filter 97d2662
+          Category: "com.android.settings.SHORTCUT"
+        9a95e6b com.android.settings/.Settings$NetworkProviderSettingsActivity filter 2d62e61
+          Category: "com.android.settings.SHORTCUT"
+        aacb75e com.android.settings/.Settings$ConfigureWifiSettingsActivity filter 7dd80c
+        882b85b com.android.settings/.Settings$WifiInfoActivity filter 53668f8
+        3f671d1 com.android.settings/.wifi.WifiConfigInfo filter f425436
+        caa7f37 com.android.settings/.Settings$WifiAPITestActivity filter 2e51ca4
+        51f5a0d com.android.settings/.wifi.WifiStatusTest filter ed77dc2
+        8a3b40e com.android.settings/.Settings$ApnSettingsActivity filter 62d5c3c
+        d70779 com.android.settings/.Settings$TetherSettingsActivity filter 6b3cbe
+        31ef11f com.android.settings/.Settings$WifiTetherSettingsActivity filter c37a235
+          Category: "com.android.settings.SHORTCUT"
+        11a66ca com.android.settings/.Settings$WifiP2pSettingsActivity filter dcb803b
+        959c358 com.android.settings/.Settings$VpnSettingsActivity filter 6e02596
+          Category: "com.android.settings.SHORTCUT"
+        956e2ed com.android.settings/.Settings$DateTimeSettingsActivity filter fbbbb3
+        dd1a570 com.android.settings/.Settings$LocalePickerActivity filter d3e516e
+        a9682a5 com.android.settings/.Settings$LanguageAndInputSettingsActivity filter e82167a
+        9c3615d com.android.settings/.Settings$SpellCheckersSettingsActivity filter ac8fad2
+        46af7a3 com.android.settings/.inputmethod.InputMethodAndSubtypeEnablerActivity filter 7d9b659
+        f17f21e com.android.settings/.Settings$UserDictionarySettingsActivity filter f5070cc
+        155b81b com.android.settings/.Settings$ZenModeSettingsActivity filter 10226f6
+          Category: "com.android.settings.SHORTCUT"
+        e0dbaf7 com.android.settings/.notification.zen.ZenSuggestionActivity filter cda0d64
+          Category: "com.android.settings.suggested.category.ZEN"
+        e0dbaf7 com.android.settings/.notification.zen.ZenSuggestionActivity filter 8445bcd
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        2fb11ef com.android.settings/.wallpaper.WallpaperSuggestionActivity filter 237a4fc
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        2fb11ef com.android.settings/.wallpaper.WallpaperSuggestionActivity filter cde3785
+          Category: "com.android.settings.suggested.category.PERSONALIZE"
+        56659da com.android.settings/.wallpaper.StyleSuggestionActivity filter 490de0b
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        cd814e8 com.android.settings/.Settings$ZenModeScheduleRuleSettingsActivity filter fe039a6
+        f0d23d com.android.settings/.Settings$DisplaySettingsActivity filter 9b50383
+          Category: "com.android.settings.SHORTCUT"
+        3769900 com.android.settings/.Settings$SmartAutoRotateSettingsActivity filter 98ad77e
+          Category: "com.android.settings.SHORTCUT"
+        73a54df com.android.settings/.Settings$NightDisplaySettingsActivity filter d2c452c
+          Category: "com.android.settings.SHORTCUT"
+        a78ed8a com.android.settings/.Settings$DarkThemeSettingsActivity filter 995ffb
+          Category: "com.android.settings.SHORTCUT"
+        9577271 com.android.settings/.Settings$NightDisplaySuggestionActivity filter 3805856
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        11400d7 com.android.settings/.Settings$MyDeviceInfoActivity filter 39fc4ad
+          Category: "com.android.settings.SHORTCUT"
+        eefcd3a com.android.settings/.Settings$ManageApplicationsActivity filter 8602748
+          Category: "com.android.settings.SHORTCUT"
+        97afd51 com.android.settings/.Settings$RunningServicesActivity filter 32b9b6
+        2f2b6b7 com.android.settings/.Settings$StorageUseActivity filter 9211d8d
+        228bb42 com.android.settings/.Settings$NotificationStationActivity filter b720753
+          Category: "com.android.settings.SHORTCUT"
+        afa9890 com.android.settings/.notification.history.NotificationHistoryActivity filter f8b498e
+        8d97145 com.android.settings/.Settings$LocationSettingsActivity filter ad90dcb
+          Category: "com.android.settings.SHORTCUT"
+        4eef854 com.android.settings/.Settings$SecurityDashboardActivity filter 86a78f2
+        e1235b5 com.android.settings/.Settings$PrivacySettingsActivity filter 91c344a
+        49fc69 com.android.settings/.Settings$DeviceAdminSettingsActivity filter c9ea6ee
+        59d1987 com.android.settings/.Settings$IccLockSettingsActivity filter 71530b4
+        814c4dd com.android.settings/.Settings$AccessibilitySettingsActivity filter a7c723
+          Category: "com.android.settings.SHORTCUT"
+        3a9e24c com.android.settings/.TextReadingForSetupWizardActivity filter 510b295
+          Category: "com.android.settings.suggested.category.DISPLAY_SETTINGS"
+        2c39faa com.android.settings/.FontSizeSettingsForSetupWizardActivity filter f6cf79b
+        1b8d738 com.android.settings/.Settings$AccessibilityDaltonizerSettingsActivity filter b940c76
+        3197277 com.android.settings/.Settings$ReduceBrightColorsSettingsActivity filter 5759f4d
+        c2c7a02 com.android.settings/.Settings$AccessibilityInversionSettingsActivity filter cc35550
+        195e767 com.android.settings/.SetupRedactionInterstitial filter 9ff1914
+          Category: "com.android.settings.suggested.category.LOCK_SCREEN_REDACTION"
+        4465f7b com.android.settings/.SetupFingerprintSuggestionActivity filter 7305198
+          Category: "com.android.settings.suggested.category.FINGERPRINT_ENROLL"
+        3b8c82d com.android.settings/.password.ScreenLockSuggestionActivity filter 2792162
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        98b42f3 com.android.settings/.biometrics.fingerprint.FingerprintEnrollSuggestionActivity filter 9a3bbb0
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        806ba29 com.android.settings/.Settings$StorageDashboardActivity filter a8d1b4f
+          Category: "com.android.settings.SHORTCUT"
+        730a712 com.android.settings/.Settings$PrintSettingsActivity filter 8b570e0
+        b4d327 com.android.settings/.UsageStatsActivity filter c7df9d4
+        1ba277d com.android.settings/.Settings$PowerUsageSummaryActivity filter c117ac3
+          Category: "com.android.settings.SHORTCUT"
+        1457096 com.android.settings/.FallbackHome filter ce2d417
+        9fd8004 com.android.settings/.Settings$DataUsageSummaryActivity filter 6600022
+          Category: "com.android.settings.SHORTCUT"
+        af5717a com.android.settings/.Settings$PaymentSettingsActivity filter bff0588
+        846f9ff com.android.settings/.Settings$PictureInPictureSettingsActivity filter cba0615
+        b42e0b8 com.android.settings/.Settings$TurnScreenOnSettingsActivity filter 1e8f1f6
+        29860ef com.android.settings/.Settings$ConfigureNotificationSettingsActivity filter 3e99e85
+          Category: "com.android.settings.SHORTCUT"
+        92b9a94 com.android.settings/.Settings$SoundSettingsActivity filter b638532
+          Category: "com.android.settings.SHORTCUT"
+        ebb75a9 com.android.settings/.sim.SimDialogActivity filter d60c72e
+        a7902cf com.android.settings/.Settings$WifiCallingSettingsActivity filter f7b745c
+        2cc365 com.android.settings/.wifi.calling.WifiCallingSuggestionActivity filter bb6283a
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+        30050bc com.android.settings/.backup.UserBackupSettingsActivity filter d23d845
+        2c7eaa7 com.android.settings/.Settings$AccountDashboardActivity filter 6b1cafd
+          Category: "com.android.settings.SHORTCUT"
+        23ab3f2 com.android.settings/.Settings$SystemDashboardActivity filter 4fe8a43
+          Category: "com.android.settings.SHORTCUT"
+        9abb3b4 com.android.settings/.Settings$WifiCallingDisclaimerActivity filter 148bdd
+        ee3129e com.android.settings/.Settings$GestureNavigationSettingsActivity filter a8f417f
+          Category: "com.android.settings.SHORTCUT"
+        6625995 com.android.settings/.Settings$ButtonNavigationSettingsActivity filter d69baaa
+          Category: "com.android.settings.SHORTCUT"
+        47d71e4 com.android.settings/.Settings$OneHandedSettingsActivity filter c1af502
+          Category: "com.android.settings.SHORTCUT"
+        80dd205 com.android.settings/com.crdroid.settings.fragments.about.ChangelogActivity filter 8be225a
+        c9e8981 com.android.settings/com.crdroid.settings.fragments.ui.DisplayCutoutForceFullscreenActivity filter 82c0a26
+        6e9b203 com.android.settings/.Settings$DevRunningServicesActivity filter 70fe580
+        d70779 com.android.settings/.Settings$TetherSettingsActivity filter 6b3cbe
+        89adec9 com.android.settings/.Settings$ZenAccessSettingsActivity filter 24849ce
+        2f2b6b7 com.android.settings/.Settings$StorageUseActivity filter d8dbe24
+        6a1bc82 com.android.settings/.notification.zen.ZenOnboardingActivity filter 8d90f93
+        806ba29 com.android.settings/.Settings$StorageDashboardActivity filter c4bf1ae
+        386dd25 com.android.settings/.wifi.addappnetworks.AddAppNetworksActivity filter 76b9efa
+        eefcd3a com.android.settings/.Settings$ManageApplicationsActivity filter 17e3deb
+        3c1a3e2 com.android.settings/.Settings$LockScreenSettingsActivity filter c2dd373
+        b01e10d com.android.settings/.RemoteBugreportActivity filter f6cf8c2
+        cdc5bc3 com.android.settings/.network.TetherProvisioningCarrierDialogActivity filter 99aac40
+        2c7eaa7 com.android.settings/.Settings$AccountDashboardActivity filter cc7fb54
+      com.android.settings.security.SECURITY_ADVANCED_SETTINGS:
+        35b6b43 com.android.settings/.Settings$SecurityAdvancedSettings filter 16d45c0
+          Action: "com.android.settings.security.SECURITY_ADVANCED_SETTINGS"
+        9a95e6b com.android.settings/.Settings$NetworkProviderSettingsActivity filter 9a3fdc8
+      com.android.settings.GESTURE_NAVIGATION_SETTINGS:
+        ee3129e com.android.settings/.Settings$GestureNavigationSettingsActivity filter c2dc54c
+          Action: "com.android.settings.GESTURE_NAVIGATION_SETTINGS"
+        7fcf625 com.android.settings/.applications.specialaccess.deviceadmin.ProfileOwnerAdd filter f5243fa
+        b91763f com.android.settings/.WebViewImplementation filter 2b0bb0c
+        af5717a com.android.settings/.Settings$PaymentSettingsActivity filter 170ad2b
+        4bafc66 com.android.settings/.Settings$WifiScanningSettingsActivity filter 968bba7
+      com.android.settings.TTS_SETTINGS:
+        7d6396f com.android.settings/.Settings$TextToSpeechSettingsActivity filter 690767c
+          Action: "com.android.settings.TTS_SETTINGS"
+        4b9f5bd com.android.settings/.notification.RedactionSettingsStandalone filter 93b67b2
+        806ba29 com.android.settings/.Settings$StorageDashboardActivity filter c4bf1ae
+        814c4dd com.android.settings/.Settings$AccessibilitySettingsActivity filter 4c15852
+        4734a60 com.android.settings/.Settings$AlarmsAndRemindersActivity filter c001b19
+        a7902cf com.android.settings/.Settings$WifiCallingSettingsActivity filter f7b745c
+      com.android.settings.intent.action.FACE_ENROLL:
+        53c1667 com.android.settings/.custom.biometrics.face.FaceEnrollActivity filter 4131c14
+          Action: "com.android.settings.intent.action.FACE_ENROLL"
+        a78ed8a com.android.settings/.Settings$DarkThemeSettingsActivity filter 3ae8818
+        cee88d1 com.android.settings/.bluetooth.RequestPermissionActivity filter 1e61f36
+        11ea6f1 com.android.settings/.Settings$MobileNetworkListActivity filter 50b2d6
+        42cffbb com.android.settings/.Settings$PrivacyDashboardActivity filter 2b60cd8
+      com.android.settings.ADVANCED_CONNECTED_DEVICE_SETTINGS:
+        a5760ec com.android.settings/.Settings$AdvancedConnectedDeviceActivity filter f58cf4a
+          Action: "com.android.settings.ADVANCED_CONNECTED_DEVICE_SETTINGS"
+        2a12283 com.android.settings/.Settings$NotificationAppListActivity filter b71cc00
+      com.android.settings.MONITORING_CERT_INFO:
+        94762f9 com.android.settings/.MonitoringCertInfoActivity filter 923323e
+          Action: "com.android.settings.MONITORING_CERT_INFO"
+        3607b com.android.settings/.Settings$MobileNetworkActivity filter 2f7be98
+        3369ab3 com.android.settings/.Settings$MobileDataUsageListActivity filter ad49870
+        afa9890 com.android.settings/.notification.history.NotificationHistoryActivity filter 68f0589
+        65713ac com.android.settings/.Settings$NetworkDashboardActivity filter e19f875
+          Action: "com.android.settings.sim.SIM_SUB_INFO_SETTINGS"
+        47d71e4 com.android.settings/.Settings$OneHandedSettingsActivity filter c75264d
+        f17f21e com.android.settings/.Settings$UserDictionarySettingsActivity filter a2b6aff
+        585285d com.android.settings/.Settings$NotificationAccessDetailsActivity filter ecb5d2
+        39c0c39 com.android.settings/.Settings$NotificationReviewPermissionsActivity filter 240c27e
+        aacb75e com.android.settings/.Settings$ConfigureWifiSettingsActivity filter c1ce73f
+        eefcd3a com.android.settings/.Settings$ManageApplicationsActivity filter 17e3deb
+        c31375b com.android.settings/.bluetooth.BluetoothPairingDialog filter b347bf8
+        e8a8561 com.android.settings/.Settings$DevelopmentSettingsDashboardActivity filter fa48886
+          Action: "com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+      com.android.settings.TRUSTED_CREDENTIALS:
+        73f789f com.android.settings/.Settings$TrustedCredentialsSettingsActivity filter 6c0fdec
+          Action: "com.android.settings.TRUSTED_CREDENTIALS"
+          Action: "com.android.settings.TRUSTED_CREDENTIALS_USER"
+        4eef854 com.android.settings/.Settings$SecurityDashboardActivity filter e6183fd
+        155b81b com.android.settings/.Settings$ZenModeSettingsActivity filter 7dad791
+        d8f9303 com.android.settings/.biometrics.face.FaceEnrollIntroduction filter c3eb280
+        b197f80 com.android.settings/.homepage.DeepLinkHomepageActivity filter bb479b9
+        956e2ed com.android.settings/.Settings$DateTimeSettingsActivity filter fbbbb3
+      com.android.settings.action.FACTORY_RESET:
+        a00d776 com.android.settings/.Settings$FactoryResetActivity filter f45e177
+          Action: "com.android.settings.action.FACTORY_RESET"
+        959c358 com.android.settings/.Settings$VpnSettingsActivity filter 2cd2cb1
+        3e24230 com.android.settings/.Settings$BlueToothPairingActivity filter 8a0fea9
+        5dc9bd0 com.android.settings/.Settings$ZenModeAutomationSettingsActivity filter 947e7c9
+        11400d7 com.android.settings/.Settings$MyDeviceInfoActivity filter b100dc4
+        e267141 com.android.settings/.Settings$FingerprintSettingsActivity filter 62636e6
+        280666d com.android.settings/.security.CredentialStorage filter 52f02a2
+        641ee37 com.android.settings/.wifi.WifiScanModeActivity filter 6315fa4
+        59e0b90 com.android.settings/.Settings$MediaManagementAppsActivity filter d30fc89
+        4eef854 com.android.settings/.Settings$SecurityDashboardActivity filter e6183fd
+        baacb97 com.android.settings/.Settings$BluetoothFindBroadcastsActivity filter f8ae184
+        1ba277d com.android.settings/.Settings$PowerUsageSummaryActivity filter bf91672
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter f468a33
+        2a40578 com.android.settings/.enterprise.ActionDisabledByAdminDialog filter c511451
+        42cffbb com.android.settings/.Settings$PrivacyDashboardActivity filter 67d7831
+        155b81b com.android.settings/.Settings$ZenModeSettingsActivity filter f79cdb8
+        959c358 com.android.settings/.Settings$VpnSettingsActivity filter 2cd2cb1
+        c788109 com.android.settings/.ActivityPicker filter c95df0e
+        3769900 com.android.settings/.Settings$SmartAutoRotateSettingsActivity filter 21d5539
+        b42e0b8 com.android.settings/.Settings$TurnScreenOnSettingsActivity filter 241ee91
+        5857c55 com.android.settings/.Settings$BugReportHandlerPickerActivity filter 476066a
+        915efd7 com.android.settings/.wifi.RequestToggleWiFiActivity filter 4b4d0c4
+        8a334da com.android.settings/.Settings$ConversationListSettingsActivity filter 2341d0b
+        eefcd3a com.android.settings/.Settings$ManageApplicationsActivity filter 17e3deb
+        29f0cab com.android.settings/.wifi.dpp.WifiDppConfiguratorActivity filter ad6af08
+        42cffbb com.android.settings/.Settings$PrivacyDashboardActivity filter 4f14b16
+        5d2bdc5 com.android.settings/.Settings$AssistGestureSettingsActivity filter beb031a
+        f846b05 com.android.settings/.Settings$EnterprisePrivacySettingsActivity filter edb475a
+        9dae8e5 com.android.settings/.Settings$WifiSettingsActivity filter b491fba
+        cee88d1 com.android.settings/.bluetooth.RequestPermissionActivity filter 1e61f36
+        c4963df com.android.settings/.Settings$AppNotificationSettingsActivity filter 527a82c
+        65713ac com.android.settings/.Settings$NetworkDashboardActivity filter e19f875
+          Action: "com.android.settings.sim.SIM_SUB_INFO_SETTINGS"
+        232ac8c com.android.settings/.Settings$ManageExternalSourcesActivity filter 6e4fd5
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter d03fda2
+        461515c com.android.settings/.Settings$ModuleLicensesActivity filter d61dc65
+        92b9a94 com.android.settings/.Settings$SoundSettingsActivity filter 322193d
+          Action: "com.android.settings.SOUND_SETTINGS"
+        8bc5af com.android.settings/.notification.zen.ZenModeVoiceActivity filter 618adbc
+        a293cbd com.android.settings/.security.applock.AppLockCredentialActivity filter b3ea2b2
+        b11a421 com.android.settings/.Settings$ManageAssistActivity filter 90b2046
+        698d9e1 com.android.settings/.Settings$ManageDomainUrlsActivity filter 67d8306
+        e00cdc7 com.android.settings/.Settings$AppMemoryUsageActivity filter 3f46ff4
+        3acfceb com.android.settings/.Settings$OverlaySettingsActivity filter e797a48
+        2b0d555 com.android.settings/.Settings$SavedAccessPointsSettingsActivity filter b08eb6a
+        28a4329 com.android.settings/.AirplaneModeVoiceActivity filter b46ae
+        3607b com.android.settings/.Settings$MobileNetworkActivity filter 2f7be98
+        89a6d2f com.android.settings/.Settings$AndroidBeamSettingsActivity filter 85eff3c
+        cd814e8 com.android.settings/.Settings$ZenModeScheduleRuleSettingsActivity filter 1cfc701
+        42c29f7 com.android.settings/.Settings$InteractAcrossProfilesSettingsActivity filter 7a15064
+        73a54df com.android.settings/.Settings$NightDisplaySettingsActivity filter 4f50bf5
+        ff8a79e com.android.settings/.accessibility.AccessibilitySettingsForSetupWizardActivity filter 225b27f
+        72a5720 com.android.settings/.Settings$PowerMenuSettingsActivity filter 65308d9
+        cb6fd8b com.android.settings/.password.ConfirmDeviceCredentialActivity filter fac7e68
+        29860ef com.android.settings/.Settings$ConfigureNotificationSettingsActivity filter 4447fc
+        9fd8004 com.android.settings/.Settings$DataUsageSummaryActivity filter 508e9ed
+        99737e9 com.android.settings/.Settings$DreamSettingsActivity filter fa1fc6e
+      com.android.settings.wifi.action.NETWORK_REQUEST:
+        3dfb273 com.android.settings/.wifi.NetworkRequestDialogActivity filter 6903530
+          Action: "com.android.settings.wifi.action.NETWORK_REQUEST"
+        dcff2f4 com.android.settings/.Settings$WriteSettingsActivity filter a48fa1d
+        7597d86 com.android.settings/.Settings$WifiDetailsSettingsActivity filter fd7647
+        cee88d1 com.android.settings/.bluetooth.RequestPermissionActivity filter 1e61f36
+        46af7a3 com.android.settings/.inputmethod.InputMethodAndSubtypeEnablerActivity filter 4114aa0
+        69f24c5 com.android.settings/.Settings$WifiDisplaySettingsActivity filter 454de1a
+      com.android.settings.ACCESSIBILITY_COLOR_SPACE_SETTINGS:
+        1b8d738 com.android.settings/.Settings$AccessibilityDaltonizerSettingsActivity filter a96e311
+          Action: "com.android.settings.ACCESSIBILITY_COLOR_SPACE_SETTINGS"
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter 1337369
+      com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS:
+        e8a8561 com.android.settings/.Settings$DevelopmentSettingsDashboardActivity filter fa48886
+          Action: "com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+        944b174 com.android.settings/.development.DevelopmentSettingsDisabledActivity filter 409169d
+          Action: "com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+      com.android.settings.WIFI_DIALOG:
+        430cbad com.android.settings/.wifi.WifiDialogActivity filter ba39ee2
+          Action: "com.android.settings.WIFI_DIALOG"
+      com.android.settings.BATTERY_SAVER_SCHEDULE_SETTINGS:
+        54b1352 com.android.settings/.Settings$BatterySaverScheduleSettingsActivity filter 4466623
+          Action: "com.android.settings.BATTERY_SAVER_SCHEDULE_SETTINGS"
+        730a712 com.android.settings/.Settings$PrintSettingsActivity filter c8acee3
+        29f0cab com.android.settings/.wifi.dpp.WifiDppConfiguratorActivity filter ad6af08
+        3197277 com.android.settings/.Settings$ReduceBrightColorsSettingsActivity filter 1c02ee4
+        c98ee2b com.android.settings/.Settings$AvailableVirtualKeyboardActivity filter 5f0b288
+      com.android.settings.DISPLAY_SETTINGS:
+        f0d23d com.android.settings/.Settings$DisplaySettingsActivity filter ec64a32
+          Action: "com.android.settings.DISPLAY_SETTINGS"
+        3083c8b com.android.settings/.Settings$SmartPixelsActivity filter b765168
+        dd1a570 com.android.settings/.Settings$LocalePickerActivity filter 74bc0e9
+        f517857 com.android.settings/.password.SetNewPasswordActivity filter 2a4ef44
+        cd24841 com.android.settings/.AllowBindAppWidgetActivity filter ad2c1e6
+        5eaad4b com.android.settings/.AppWidgetPickActivity filter 8bad328
+        1dd7d3 com.android.settings/.wifi.WifiNoInternetDialog filter d748a09
+        3e8331d com.android.settings/.Settings$HighPowerApplicationsActivity filter edec992
+        ea7e07d com.android.settings/.network.TetherProvisioningActivity filter 18edb72
+        2fabde0 com.android.settings/.Settings$AdaptiveBrightnessActivity filter 5dd4899
+        fad1e13 com.android.settings/.bluetooth.QrCodeScanModeActivity filter 191c850
+        8a3b40e com.android.settings/.Settings$ApnSettingsActivity filter f641e2f
+      com.android.settings.action.IA_SETTINGS:
+        30050bc com.android.settings/.backup.UserBackupSettingsActivity filter e864b9a
+          Action: "com.android.settings.action.IA_SETTINGS"
+        31dab33 com.android.settings/.security.RequestManageCredentials filter a3d9ef0
+        8a1dc97 com.android.settings/.Settings$PrivacyControlsActivity filter 1eb1e84
+        765b281 com.android.settings/.password.ConfirmDeviceCredentialActivity$InternalActivity filter 3767f26
+      com.android.settings.SEARCH_RESULT_TRAMPOLINE:
+        cea4c4f com.android.settings/.search.SearchResultTrampoline filter 71cbfdc
+          Action: "com.android.settings.SEARCH_RESULT_TRAMPOLINE"
+      com.android.settings.SOUND_SETTINGS:
+        92b9a94 com.android.settings/.Settings$SoundSettingsActivity filter 322193d
+          Action: "com.android.settings.SOUND_SETTINGS"
+        f09e349 com.android.settings/.Settings$CaptioningSettingsActivity filter dec344e
+        6d4fe7 com.android.settings/.Settings$ZenModeEventRuleSettingsActivity filter 8d9794
+        e1e6e4b com.android.settings/.Settings$FaceSettingsActivity filter 1920028
+        70461fe com.android.settings/.Settings$CreateShortcutActivity filter b2d4d5f
+        52832f5 com.android.settings/.notification.app.ChannelPanelActivity filter 22888a
+        5dc9bd0 com.android.settings/.Settings$ZenModeAutomationSettingsActivity filter ab31ece
+        7df2e74 com.android.settings/.network.NetworkSetupActivity filter be64f9d
+        2ee5c5f com.android.settings/.biometrics.fingerprint.FingerprintEnrollIntroduction filter 1c76ac
+        11400d7 com.android.settings/.Settings$MyDeviceInfoActivity filter b100dc4
+        11ea6f1 com.android.settings/.Settings$MobileNetworkListActivity filter 50b2d6
+        ee3a427 com.android.settings/.bluetooth.DevicePickerActivity filter 1af6d4
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter 36add1c
+        e2ea420 com.android.settings/.Settings$AccessibilityDetailsSettingsActivity filter 9dd1d9
+        956e2ed com.android.settings/.Settings$DateTimeSettingsActivity filter 3710522
+        ef06d6d com.android.settings/.panel.SettingsPanelActivity filter 59691f0
+      com.android.settings.BUTTON_NAVIGATION_SETTINGS:
+        6625995 com.android.settings/.Settings$ButtonNavigationSettingsActivity filter 660769b
+          Action: "com.android.settings.BUTTON_NAVIGATION_SETTINGS"
+        f517857 com.android.settings/.password.SetNewPasswordActivity filter 2a4ef44
+        6be27be com.android.settings/.fuelgauge.BatterySaverModeVoiceActivity filter a07001f
+        e44b0c6 com.android.settings/.wifi.dpp.WifiDppEnrolleeActivity filter 3fc887
+        caadf40 com.android.settings/.Settings$BatterySaverSettingsActivity filter 46be79
+        846f9ff com.android.settings/.Settings$PictureInPictureSettingsActivity filter 9e53cc
+        217ea38 com.android.settings/.Settings$MediaControlsSettingsActivity filter cdbfa11
+        a5760ec com.android.settings/.Settings$AdvancedConnectedDeviceActivity filter 9445cb5
+        d534ccb com.android.settings/.Settings$AutomaticStorageManagerSettingsActivity filter ddfbca8
+        28be7e8 com.android.settings/.Settings$AppBubbleNotificationSettingsActivity filter baa9e01
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a1d6b
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a1d6b
+        a80e2dc com.android.settings/.Settings$PublicVolumeSettingsActivity filter 27cfe5
+        2697aba com.android.settings/.Settings$ApnEditorActivity filter 2a750c8
+        89bd4f1 com.android.settings/.TestingSettingsBroadcastReceiver filter 8a148d6
+        92b21f3 com.android.settings/.sim.SimSelectNotification filter a7aeb0
+      com.android.settings.SEARCH_START:
+        14b6b5f com.android.settings/.search.SearchStateReceiver filter 24dd9ac
+          Action: "com.android.settings.SEARCH_START"
+          Action: "com.android.settings.SEARCH_EXIT"
+        92b21f3 com.android.settings/.sim.SimSelectNotification filter a7aeb0
+        4a7dd9d com.android.settings/com.android.settingslib.bluetooth.BluetoothTimeoutReceiver filter 56d6212
+        ce55e7b com.android.settings/.bluetooth.BluetoothPermissionRequest filter e94e498
+        ce55e7b com.android.settings/.bluetooth.BluetoothPermissionRequest filter e94e498
+        b70b6e5 com.android.settings/.sim.receivers.SimSlotChangeReceiver filter d5d5ba
+        ab1e7b9 com.android.settings/.SettingsInitialize filter 47037fe
+        a804675 com.android.settings/.bluetooth.BluetoothPairingRequest filter 193d60a
+        307cf2d com.android.settings/.users.ProfileUpdateReceiver filter 5411c62
+        a06dc6b com.android.settings/.sim.receivers.SuwFinishReceiver filter 1d6a3c8
+        c616757 com.android.settings/com.android.settingslib.bluetooth.BluetoothDiscoverableTimeoutReceiver filter 73fb244
+      com.android.settings.SEARCH_EXIT:
+        14b6b5f com.android.settings/.search.SearchStateReceiver filter 24dd9ac
+          Action: "com.android.settings.SEARCH_START"
+          Action: "com.android.settings.SEARCH_EXIT"
+        ab1e7b9 com.android.settings/.SettingsInitialize filter 47037fe
+        abf3129 com.android.settings/.fuelgauge.batterytip.AnomalyConfigReceiver filter 3189cae
+        2fadc61 com.android.settings/.sim.receivers.SimCompleteBootReceiver filter 7fb9386
+        cb4d447 com.android.settings/.safetycenter.SafetySourceBroadcastReceiver filter 7963474
+        f606de3 com.android.settings/com.crdroid.settings.fragments.ui.doze.DozeReceiver filter e1c23e0
+        a804675 com.android.settings/.bluetooth.BluetoothPairingRequest filter 193d60a
+      com.android.settings.action.LAUNCH_BLUETOOTH_PAIRING:
+        dcbea4f com.android.settings/.media.BluetoothPairingReceiver filter 95105dc
+          Action: "com.android.settings.action.LAUNCH_BLUETOOTH_PAIRING"
+        abf3129 com.android.settings/.fuelgauge.batterytip.AnomalyConfigReceiver filter 3189cae
+        cb4d447 com.android.settings/.safetycenter.SafetySourceBroadcastReceiver filter 7963474
+        23bb65b com.android.settings/.development.qstile.DevelopmentTiles$ShowLayout filter a5e8ef8 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        5a29fd1 com.android.settings/.development.qstile.DevelopmentTiles$GPUProfiling filter f95ea36 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        bf55d37 com.android.settings/.development.qstile.DevelopmentTiles$ForceRTL filter 969a2a4 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        60680d com.android.settings/.development.qstile.DevelopmentTiles$AnimationSpeed filter fce73c2 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        c3895d3 com.android.settings/.development.qstile.DevelopmentTiles$WinscopeTrace filter 5f04510 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        6b87809 com.android.settings/.development.qstile.DevelopmentTiles$SensorsOff filter 1140a0e permission android.permission.BIND_QUICK_SETTINGS_TILE
+        56cbc2f com.android.settings/.development.qstile.DevelopmentTiles$WirelessDebugging filter bfca23c permission android.permission.BIND_QUICK_SETTINGS_TILE
+        a678bc5 com.android.settings/.development.qstile.DevelopmentTiles$ShowTaps filter a0ab91a permission android.permission.BIND_QUICK_SETTINGS_TILE
+        f12ec4b com.android.settings/.development.qstile.DevelopmentTiles$DesktopMode filter c0fa628 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        4562355 com.android.settings/.homepage.contextualcards.SettingsContextualCardProvider filter 2f216a
+      com.android.settings.action.SUGGESTION_STATE_PROVIDER:
+        fa2053f com.android.settings/.dashboard.suggestions.SuggestionStateProvider filter 34f9e0c
+          Action: "com.android.settings.action.SUGGESTION_STATE_PROVIDER"
+        429b699 com.android.settings/.search.SettingsSearchIndexablesProvider filter ebb8d5e
+  Permission [com.android.settings.FACE_UNLOCK] (5f86a7c):
+    sourcePackage=com.android.settings
+    perm=PermissionInfo{9570b31 com.android.settings.FACE_UNLOCK}
+  Permission [com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (31f4f05):
+    sourcePackage=com.android.settings
+    perm=PermissionInfo{c4d2797 com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+  com.android.settings/.homepage.contextualcards.SettingsContextualCardProvider:
+    Provider{4562355 com.android.settings/.homepage.contextualcards.SettingsContextualCardProvider}
+  com.android.settings/.emergency.EmergencyActionContentProvider:
+    Provider{4b40d84 com.android.settings/.emergency.EmergencyActionContentProvider}
+  com.android.settings/.dashboard.SummaryProvider:
+    Provider{4e0296d com.android.settings/.dashboard.SummaryProvider}
+  com.android.settings/.slices.SettingsSliceProvider:
+    Provider{75f09a2 com.android.settings/.slices.SettingsSliceProvider}
+  com.android.settings/.dashboard.suggestions.SuggestionStateProvider:
+    Provider{fa2053f com.android.settings/.dashboard.suggestions.SuggestionStateProvider}
+  com.android.settings/.deviceinfo.legal.ModuleLicenseProvider:
+    Provider{db2a633 com.android.settings/.deviceinfo.legal.ModuleLicenseProvider}
+  com.android.settings/androidx.startup.InitializationProvider:
+    Provider{2267df0 com.android.settings/androidx.startup.InitializationProvider}
+  com.android.settings/.search.SettingsSearchIndexablesProvider:
+    Provider{429b699 com.android.settings/.search.SettingsSearchIndexablesProvider}
+  com.android.settings/androidx.core.content.FileProvider:
+    Provider{c62ef69 com.android.settings/androidx.core.content.FileProvider}
+  com.android.settings/.homepage.contextualcards.CardContentProvider:
+    Provider{f481dee com.android.settings/.homepage.contextualcards.CardContentProvider}
+  [com.android.settings.module_licenses]:
+    Provider{db2a633 com.android.settings/.deviceinfo.legal.ModuleLicenseProvider}
+      applicationInfo=ApplicationInfo{1465b5a com.android.settings}
+    Provider{75f09a2 com.android.settings/.slices.SettingsSliceProvider}
+      applicationInfo=ApplicationInfo{c66818b com.android.settings}
+  [com.android.settings.homepage.CardContentProvider]:
+    Provider{f481dee com.android.settings/.homepage.contextualcards.CardContentProvider}
+      applicationInfo=ApplicationInfo{f9fb268 com.android.settings}
+  [com.android.settings.files]:
+    Provider{c62ef69 com.android.settings/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3cad681 com.android.settings}
+  [com.android.settings.slices]:
+    Provider{75f09a2 com.android.settings/.slices.SettingsSliceProvider}
+      applicationInfo=ApplicationInfo{37ed326 com.android.settings}
+  [com.android.settings.androidx-startup]:
+    Provider{2267df0 com.android.settings/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6b9ab67 com.android.settings}
+  [com.android.settings.homepage.contextualcards]:
+    Provider{4562355 com.android.settings/.homepage.contextualcards.SettingsContextualCardProvider}
+      applicationInfo=ApplicationInfo{7f18d14 com.android.settings}
+  [com.android.settings]:
+    Provider{429b699 com.android.settings/.search.SettingsSearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{c4d59bd com.android.settings}
+  [com.android.settings.dashboard.SummaryProvider]:
+    Provider{4e0296d com.android.settings/.dashboard.SummaryProvider}
+      applicationInfo=ApplicationInfo{374fbb2 com.android.settings}
+  [com.android.settings.suggestions.status]:
+    Provider{fa2053f com.android.settings/.dashboard.suggestions.SuggestionStateProvider}
+      applicationInfo=ApplicationInfo{b2b9703 com.android.settings}
+  [com.android.settings.emergency]:
+    Provider{4b40d84 com.android.settings/.emergency.EmergencyActionContentProvider}
+      applicationInfo=ApplicationInfo{8e46680 com.android.settings}
+  [com.android.settings]
+  Package [com.android.settings] (e794e3e):
+    pkg=Package{3f18223 com.android.settings}
+    dataDir=/data/user_de/0/com.android.settings
+      com.android.settings.FACE_UNLOCK: prot=signature|privileged, INSTALLED
+      com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+      com.android.settings.FACE_UNLOCK
+      com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.android.settings.FACE_UNLOCK: granted=true
+      com.android.settingslib.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+        com.android.settings.homepage.DeepLinkHomepageActivity
+        com.android.settings.search.SearchStateReceiver
+        com.android.settings.Settings$ConnectedDeviceDashboardActivity
+        com.android.settings.Settings$PowerUsageSummaryActivity
+        com.android.settings.SetupFingerprintSuggestionActivity
+        com.android.settings.Settings$WifiDisplaySettingsActivity
+        com.android.settings.Settings$BluetoothSettingsActivity
+        com.android.settings.Settings$DevelopmentSettingsDashboardActivity
+        com.android.settings.SetupRedactionInterstitial
+        com.android.settings.Settings$WifiSettingsActivity
+        com.android.settings.WebViewImplementation
+        com.android.settings.Settings$UserSettingsActivity
+        com.android.settings.Settings$DataUsageSummaryActivity
+    [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+    [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]:
+      [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]:
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+        [org.lineageos.settings,org.ifaa.aidl.manager,com.android.localtransport,com.android.inputdevices,com.android.location.fused,com.android.providers.settings,com.android.keychain,com.android.wallpaperbackup,io.github.maytinhdibo.pocket,org.lineageos.lineagesettings,lineageos.platform,org.lineageos.lineageparts,io.chaldeaprjkt.gamespace,com.android.dynsystem,android,com.android.settings,com.android.server.telecom]
+      PackageSetting{e794e3e com.android.settings/1000}
+      com.android.settings.FACE_UNLOCK: granted=true
+      com.android.settingslib.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+  [com.android.settings]
+  [com.android.settings]
