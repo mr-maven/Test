@@ -1,0 +1,1263 @@
+Task 3 - Modeling
+
+This notebook will walk you through this task interactively, meaning that once you've
+imported this notebook into Google Colab, you'll be able to run individual cells of code
+independently, and see the results as you go.
+
+To follow along, simply read the notes within the notebook and run the cells in order.
+
+Section 1 - Setup
+
+First, we need to mount this notebook to our Google Drive folder, in order to access the CSV
+data file. If you haven't already, watch this video https: //www.youtube.com/watch?
+v=woHxvbBLarQ to help you mount your Google Drive folder.
+
+from google.colab import drive
+drive.mount('/content/drive")
+
+Drive already mounted at /content/drive; to attempt to forcibly
+remount, call drive.mount("/content/drive", force_remount=True).
+
+We want to use dataframes once again to store and manipulate the data.
+Ipip install pandas
+
+Requirement already satisfied: pandas in
+/usr/local/lib/python3.7/dist-packages (1.3.5)
+
+Requirement already satisfied: numpy>=1.17.3 in
+/usr/local/lib/python3.7/dist-packages (from pandas) (1.21.6)
+Requirement already satisfied: pytz>=2017.3 in
+/usr/local/lib/python3.7/dist-packages (from pandas) (2022.1)
+Requirement already satisfied: python-dateutil>=2.7.3 in
+/usr/local/lib/python3.7/dist-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in
+/usr/local/lib/python3.7/dist-packages (from python-dateutil>=2.7.3-
+>pandas) (1.15.0)
+
+import pandas as pd
+
+Section 2 - Data loading
+
+Similar to before, let's load our data from Google Drive for the 3 datasets provided. Be sure
+to upload the datasets into Google Drive, so that you can access them here.
+
+path = "/content/drive/MyDrive/Forage - Cognizant AI Program/Task
+3/Resources/"
+
+sales _df = pd.read_csv(f"{path}sales.csv")
+sales_df.drop(columns=["Unnamed: 0"], inplace=True, errors='ignore')
+
+sales_df.head()
+
+RPWNRHRO
+
+transaction_id
+alc82654-c52c-45b3-8ce8-4c2alefebled
+931ad550-09e8-4dab-beaa-8c9d17be9c60
+ael33534-6f61-4cd6-b6b8-dlcld8d90aea
+157cebd9-aaf0-475d-8all-7c8e0f5b76e4
+a8labcd3-5e0c-44a2-826c-aead3e46c514
+
+timestamp \
+
+2022-03-02 09:51:38
+2022-03-06 10:33:59
+2022-03-04 17:20:21
+2022-03-02 17:23:58
+2022-03-05 14:32:43
+
+product_id category customer_type
+
+unit price \
+
+0 3bcbclea-0198-46de-9ffd-514ae3338713 fruit gold
+3.99
+1 ad81b46c-bf38-41cf-9b54-5fe7f5ebad3e fruit standard
+3.99
+2 7c¢55c¢cbd4-1306-4c04-a030-628cbe7867cl fruit premium
+0.19
+3 80da8348-1707-403f-8be7-9eb6deeccc883 fruit gold
+0.19
+4 7f5e86e6-f06f-45f6-bf44-27b095c9%ad1d fruit basic
+4.49
+
+quantity total payment type
+0 2 7.98 e-wallet
+1 1 3.99 e-wallet
+2 2 0.38 e-wallet
+3 4 0.76 e-wallet
+4 2 8.98 debit card
+
+stock _df = pd.read_csv(f"{path}sensor stock levels.csv")
+stock_df.drop(columns=["Unnamed: 0"], inplace=True, errors='ignore')
+stock _df.head()
+
+id timestamp \
+
+RPWNRHRO
+
+PWN RO
+
+4220e505-c247-478d-9831-6b9f87a4488a
+£2612b26-fc82-49ea-8940-0751fdd4d9%ef
+989a2871-67e6-4478-aa49-c3a35dacle2e
+af8e5683-d247-46ac-9909-1a77bdebefb2
+08a32247-3f44-4002-85fb-c198434dd4bb
+
+product_id
+f658605e-75f3-4fed-a655-c0903f344427
+de06083a-f5c0-451d-b2f4-9ab88b52609d
+ce8f3a04-dlad-43bl-a7c2-falb8e7674c8
+c2le3ba9-92a3-4745-92c2-6Taef73223f7
+71478817 -aa5b-44e9-9059-8045228c9eb0
+
+2022-03-07 12:13:02
+2022-03-07 16:39:46
+2022-03-01 18:17:43
+2022-03-02 14:29:09
+2022-03-02 13:46:18
+
+estimated stock pct
+0.75
+0.48
+0.58
+0.79
+0.22
+
+temp_df = pd.read_csv(f"{path}sensor storage temperature.csv")
+temp_df.drop(columns=["Unnamed: 0"], inplace=True, errors='ignore")
+temp_df.head()
+id timestamp
+temperature
+dlcalef8-0eac-42fc-af80-97106efc7bl3 2022-03-07 15:55:20
+.96
+4b8ab6c4-0f3a-4116-8261-8cf9397e9d18 2022-03-01 09:18:22
+.88
+3d47a0c7-1e72-4512-812f-b6b5d8428cf3 2022-03-04 15:12:26
+.78
+9500357b-cel5-424a-837a-7677b386f471 2022-03-02 12:30:42
+.18
+c4b61fec-99c2-4c6d-8e5d-4edd8c9632fa 2022-03-05 09:09:33
+.38
+
+FANWRHENRFENO
+
+Section 4 - Data cleaning
+
+Now that we have our 3 datasets successfully loaded, we need to ensure that the data is
+clean. Data cleaning can be a very intense task, so for this exercise, we will focus just on
+ensuring that the correct datatypes are present for each column, and if not, correcting
+them.
+
+We can use the .info() method to look at data types.
+sales_df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7829 entries, 0 to 7828
+Data columns (total 9 columns):
+
+# Column Non-Null Count Dtype
+0  transaction_id 7829 non-null object
+1 timestamp 7829 non-null object
+2 product_id 7829 non-null object
+3 category 7829 non-null object
+4 customer_type 7829 non-null object
+5 unit_price 7829 non-null  float64
+6 quantity 7829 non-null int64
+7 total 7829 non-null float64
+8 payment_type 7829 non-null object
+
+dtypes: float64(2), int64(1l), object(6)
+memory usage: 550.6+ KB
+
+stock _df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 15000 entries, 0 to 14999
+
+Data columns (total 4 columns):
+
+# Column Non-Null Count Dtype
+
+0 id 15000 non-null object
+1 timestamp 15000 non-null object
+2 product_id 15000 non-null object
+3 estimated stock pct 15000 non-null float64
+dtypes: float64(l), object(3)
+memory usage: 468.9+ KB
+
+temp_df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 23890 entries, 0 to 23889
+Data columns (total 3 columns):
+
+# Column Non-Null Count Dtype
+
+0 id 23890 non-null object
+1 timestamp 23890 non-null object
+2 temperature 23890 non-null float64
+dtypes: float64(l), object(2)
+memory usage: 560.0+ KB
+
+Everything looks fine for the 3 datasets apart from the timestamp column in each dataset.
+Using the same helper function as before, let's convert this to the correct type for each
+dataset.
+
+def convert _to_datetime(data: pd.DataFrame = None, column: str =
+None) :
+
+dummy = data. copy()
+
+dummy [column] = pd.to_ datetime (dummy[column], format='%Y-%m-%d %H:
+%M:%S"')
+
+return dummy
+
+sales_df = convert_to_datetime(sales_df, 'timestamp')
+sales_df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7829 entries, 0 to 7828
+Data columns (total 9 columns):
+
+# Column Non-Null Count Dtype
+
+0  transaction_id 7829 non-null object
+
+1 timestamp 7829 non-null datetime64([ns]
+2 product_id 7829 non-null object
+
+3 category 7829 non-null object
+
+4 customer_type 7829 non-null object
+
+5 unit_price 7829 non-null  float64
+
+6 quantity 7829 non-null int64
+
+7 total 7829 non-null float64
+
+8 payment_type 7829 non-null object
+
+dtypes: datetime64[ns](1l), float64(2), int64(1l), object(5)
+memory usage: 550.6+ KB
+stock _df = convert_to_datetime (stock df,
+stock _df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 15000 entries, 0 to 14999
+Data columns (total 4 columns):
+
+"timestamp')
+
+# Column Non-Null Count Dtype
+
+0 id 15000 non-null object
+
+1 timestamp 15000 non-null datetime64[ns]
+2 product_id 15000 non-null object
+
+3 estimated stock pct 15000 non-null float64
+
+dtypes: datetime64[ns](1l), float64(1l), object(2)
+memory usage: 468.9+ KB
+
+temp_df = convert_to_datetime(temp_df,
+temp_df.info()
+
+"timestamp')
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 23890 entries, 0 to 23889
+Data columns (total 3 columns):
+
+# Column Non-Null Count Dtype
+
+0 id 23890 non-null object
+
+1 timestamp 23890 non-null datetime64[ns]
+2 temperature 23890 non-null float64
+dtypes: datetime64[ns](1l), float64(1l), object(l)
+memory usage: 560.0+ KB
+
+This looks much better!
+
+Section 5 - Merge data
+
+Currently we have 3 datasets. In order to include all of this data within a predictive model,
+we need to merge them together into 1 dataframe.
+
+If we revisit the problem statement:
+
+“Can we accurately predict the stock levels of products, based on
+sales data and sensor data,
+
+on an hourly basis in order to more intelligently procure products
+from our suppliers.”
+
+The client indicates that they want the model to predict on an hourly basis. Looking at the
+data model, we can see that only column that we can use to merge the 3 datasets together is
+timestamp.
+
+So, we must first transform the timestamp column in all 3 datasets to be based on the hour
+of the day, then we can merge the datasets together.
+sales_df.head()
+
+transaction_id timestamp \
+alc82654-c52c-45b3-8ce8-4c2alefebl3ed 2022-03-02 09:51:38
+931ad550-09e8-4dab -beaa-8c9d17be9c60 2022-03-06 10:33:59
+ael33534-6f61-4cd6-b6b8-dlc1d8d90aea 2022-03-04 17:20:21
+157cebd9-aaf0-475d-8all-7c8e0f5b76e4 2022-03-02 17:23:58
+a8labcd3-5e0c-44a2-826c-aead3e46c514 2022-03-05 14:32:43
+
+PWN O
+
+product_id category customer_type
+unit price \
+
+0 3bcbclea-0198-46de-9ffd-514ae3338713 fruit gold
+3.99
+1 ad81b46c-bf38-41cf-9b54-5fe7f5ebad3e fruit standard
+3.99
+2 7c¢55c¢cbd4-1306-4c04-a030-628cbe7867cl fruit premium
+0.19
+3 80da8348-1707-403f-8be7-9eb6deeccc883 fruit gold
+0.19
+4 7f5e86e6-f06f-45f6-bf44-27b095c9%ad1d fruit basic
+4.49
+
+quantity total payment type
+0 2 7.98 e-wallet
+1 1 3.99 e-wallet
+2 2 0.38 e-wallet
+3 4 0.76 e-wallet
+4 2 8.98 debit card
+f
+
+rom datetime import datetime
+
+def convert _timestamp_to_hourly(data: pd.DataFrame = None, column: str
+= None):
+
+dummy = data. copy()
+
+new_ts = dummy[column].tolist()
+
+new_ts [i.strftime('%Y-%m-%d %H:00:00') for i in new ts]
+
+new ts = [datetime.strptime(i, '%Y-%m-%d %H:00:00') for i in new ts]
+
+dummy [column] = new_ts
+
+return dummy
+
+sales_df = convert_timestamp_to_hourly(sales_df, 'timestamp')
+sales_df.head()
+
+transaction_id timestamp \
+alc82654-c52c-45b3-8ce8-4c2alefebl3ed 2022-03-02 09:00:00
+931ad550-09e8-4dab -beaa-8c9d17be9c60 2022-03-06 10:00:00
+ael33534-6f61-4cd6-b6b8-dlc1d8d90aea 2022-03-04 17:00:00
+157cebd9-aaf0-475d-8all-7c8e0f5b76e4 2022-03-02 17:00:00
+a8labcd3-5e0c-44a2-826c-aead3e46c514 2022-03-05 14:00:00
+
+RPWNRHRO
+
+product_id category customer_type
+unit price \
+
+0 3bcbclea-0198-46de-9ffd-514ae3338713 fruit gold
+3.99
+1 ad81b46c-bf38-41cf-9b54-5fe7f5ebad3e fruit standard
+3.99
+2 7c¢55c¢cbd4-1306-4c04-a030-628cbe7867cl fruit premium
+0.19
+3 80da8348-1707-403f-8be7-9eb6deeccc883 fruit gold
+0.19
+4 7f5e86e6-f06f-45f6-bf44-27b095c9%ad1d fruit basic
+4.49
+
+quantity total payment type
+0 2 7.98 e-wallet
+1 1 3.99 e-wallet
+2 2 0.38 e-wallet
+3 4 0.76 e-wallet
+4 2 8.98 debit card
+
+stock _df = convert_timestamp_to_hourly (stock df, 'timestamp')
+stock _df.head()
+
+id timestamp \
+4220e505-c247-478d-9831-6b9f87a4488a 2022-03-07 12:00:00
+£2612b26-fc82-49ea-8940-0751fdd4d9ef 2022-03-07 16:00:00
+989a287f-67e6-4478-aa49-c3a35dacfe2e 2022-03-01 18:00:00
+af8e5683-d247-46ac-9909-1a77bdebefb2 2022-03-02 14:00:00
+08a32247-3144-4002-85fb-c198434dd4bb 2022-03-02 13:00:00
+
+PWN O
+
+product_id estimated stock pct
+f658605e-75f3-4fed-a655-c09031344427 0.75
+de06083a-f5c0-451d-b2f4-9ab88b52609d 0.48
+ce8f3a04-dlad-43bl-a7c2-falb8e7674c8 0.58
+c21e3ba9-92a3-4745-92c2-6faef73223f7 0.79
+7478817 -aa5b-44e9-9059-8045228c9%eb0 0.22
+
+PWN O
+
+temp_df = convert_timestamp_to_hourly(temp_df, 'timestamp')
+temp_df.head()
+
+id timestamp
+temperature
+dlcalef8-0eac-42fc-af80-97106efc7bl3 2022-03-07 15:00:00
+.96
+4b8ab6c4-0f3a-4f16-826T-8cf9397e9d18 2022-03-01 09:00:00
+.88
+3d47a0c7-1e72-4512-812f-b6b5d8428cf3 2022-03-04 15:00:00
+.78
+9500357b-cel5-424a-837a-7677b386f471 2022-03-02 12:00:00
+.18
+c4b61fec-99c2-4c6d-8e5d-4edd8c9632fa 2022-03-05 09:00:00
+.38
+
+FANWRHENREFENO
+Now you can see all of the timestamp columns have had the minutes and seconds reduced
+to 00. The next thing to do, is to aggregate the datasets in order to combine rows which
+have the same value for timestamp.
+
+For the sales data, we want to group the data by timestamp but also by product_id.
+When we aggregate, we must choose which columns to aggregate by the grouping. For now,
+let's aggregate quantity.
+
+sales_agg = sales_df.groupby([' timestamp’,
+"product_id']).agg({ quantity’: 'sum'}).reset_index()
+sales_agg.head()
+
+timestamp product_id quantity
+0 2022-03-01 09:00:00 00el20bb-89d6-4df5-bc48-a051148e3d03 3
+1 2022-03-01 09:00:00 01f3cdd9-8e9e-4dff-9b5¢c-69698a0388d0 3
+2 2022-03-01 09:00:00 03a2557a-aal2-4add-a6d4-77dc36342067 3
+3 2022-03-01 09:00:00 049b2171-0eeb-4a3e-bf98-0c290c7821da 7
+4 2022-03-01 09:00:00 04da844d-8dba-4470-9119-e534d52a03a0 11
+
+We now have an aggregated sales data where each row represents a unique combination of
+hour during which the sales took place from that weeks worth of data and the product_id.
+We summed the quantity and we took the mean average of the unit_price.
+
+For the stock data, we want to group it in the same way and aggregate the
+estimated stock pct
+
+stock_agg = stock _df.groupby([' timestamp’,
+‘product_id']).agg({ 'estimated stock pct': 'mean'}).reset_index()
+stock_agg.head()
+
+timestamp product_id \
+0 2022-03-01 09:00:00 00e120bb-89d6-4df5-bc48-a051148e3d03
+1 2022-03-01 09:00:00 01f3cdd9-8e9e-4dff-9b5c-69698a0388d0
+2 2022-03-01 09:00:00 01ff0803-ae73-4234-971d-5713c97b7f4b
+3 2022-03-01 09:00:00 0363eb21-8c74-47el-a216-c37e565e5ceb
+4 2022-03-01 09:00:00 03f0b20e-3b5b-444f-bc39-cdfa2523d4bc
+
+estimated stock pct
+
+0 0.89
+1 0.14
+2 0.67
+3 0.82
+4 0.05
+
+This shows us the average stock percentage of each product at unique hours within the
+week of sample data.
+
+Finally, for the temperature data, product_id does not exist in this table, so we simply need
+to group by timestamp and aggregate the temperature.
+temp_agg = temp_df.groupby([ 'timestamp']).agg({ temperature":
+‘mean'}).reset_index()
+temp_agg.head()
+
+timestamp temperature
+
+0 2022-03-01 09:00:00 -0.028850
+1 2022-03-01 10:00:00 1.284314
+2 2022-03-01 11:00:00 -0.560000
+3 2022-03-01 12:00:00 -0.537721
+4 2022-03-01 13:00:00 -0.188734
+
+This gives us the average temperature of the storage facility where the produce is stored in
+the warehouse by unique hours during the week. Now, we are ready to merge our data. We
+will use the stock _agg table as our base table, and we will merge our other 2 tables onto
+this.
+
+merged_df = stock_agg.merge(sales_agg, on=['timestamp', 'product_id'],
+how="'left")
+merged _df.head()
+
+timestamp product_id \
+0 2022-03-01 09:00:00 00e120bb-89d6-4df5-bc48-a051148e3d03
+1 2022-03-01 09:00:00 01f3cdd9-8e9e-4dff-9b5c-69698a0388d0
+2 2022-03-01 09:00:00 01ff0803-ae73-4234-971d-5713c97b7f4b
+3 2022-03-01 09:00:00 0363eb21-8c74-47el-a216-c37e565e5ceb
+4 2022-03-01 09:00:00 03f0b20e-3b5b-444f-bc39-cdfa2523d4bc
+
+estimated stock pct quantity
+
+0 0.89 3.0
+1 0.14 3.0
+2 0.67 NaN
+3 0.82 NaN
+4 0.05 NaN
+
+merged_df = merged_df.merge(temp_agg, on='timestamp', how='left")
+merged _df.head()
+
+timestamp product_id \
+0 2022-03-01 09:00:00 00e120bb-89d6-4df5-bc48-a051148e3d03
+1 2022-03-01 09:00:00 01f3cdd9-8e9e-4dff-9b5c-69698a0388d0
+2 2022-03-01 09:00:00 01ff0803-ae73-4234-971d-5713c97b7f4b
+3 2022-03-01 09:00:00 0363eb21-8c74-47el-a216-c37e565e5ceb
+4 2022-03-01 09:00:00 03f0b20e-3b5b-444f-bc39-cdfa2523d4bc
+
+estimated stock pct quantity temperature
+
+0 0.89 3.0 -0.02885
+1 0.14 3.0 -0.02885
+2 0.67 NaN -0.02885
+3 0.82 NaN -0.02885
+4 0.05 NaN -0.02885
+merged _df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 10845 entries, 0 to 10844
+Data columns (total 5 columns):
+
+# Column Non-Null Count Dtype
+
+0 timestamp 10845 non-null datetime64[ns]
+1 product_id 10845 non-null object
+
+2 estimated stock pct 10845 non-null float64
+
+3 quantity 3067 non-null float64
+
+4 temperature 10845 non-null float64
+
+dtypes: datetime64[ns](1l), float64(3), object(l)
+memory usage: 508.4+ KB
+
+We can see from the . info () method that we have some null values. These need to be
+treated before we can build a predictive model. The column that features some null values
+is quantity. We can assume that if there is a null value for this column, it represents that
+there were O sales of this product within this hour. So, lets fill this columns null values with
+0, however, we should verify this with the client, in order to make sure we're not making
+any assumptions by filling these null values with 0.
+
+merged _df[ 'quantity'] = merged df[ 'quantity'].fillna(0)
+merged _df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 10845 entries, 0 to 10844
+Data columns (total 5 columns):
+
+# Column Non-Null Count Dtype
+
+0 timestamp 10845 non-null datetime64[ns]
+1 product_id 10845 non-null object
+
+2 estimated stock pct 10845 non-null float64
+
+3 quantity 10845 non-null float64
+
+4 temperature 10845 non-null float64
+
+dtypes: datetime64[ns](1l), float64(3), object(l)
+memory usage: 508.4+ KB
+
+We can combine some more features onto this table too, including category and
+unit_price.
+
+product_categories
+product_categories
+
+sales_df[['product_id', 'category']]
+product_categories.drop_duplicates()
+
+product_price
+product_price
+
+sales _df[['product_id', 'unit_price']]
+product_price.drop_duplicates()
+
+merged df = merged _df.merge(product_ categories, on="product id",
+how="1left")
+merged _df.head()
+timestamp
+0 2022-03-01 09:00:00
+1 2022-03-01 09:00:00
+2 2022-03-01 09:00:00
+3 2022-03-01 09:00:00
+4 2022-03-01 09:00:00
+
+estimated stock pct
+
+0 0.89
+1 0.14
+2 0.67
+3 0.82
+4 0.05
+
+product _id \
+00e120bb-89d6-4df5-bc48-a051148e3d03
+01f3cdd9-8e9e-4dff-9b5c-69698a0388d0
+01ff0803-ae73-4234-971d-5713c97b7f4b
+0363eb21-8c74-47el-a216-c37e565e5ceb
+03f0b20e-3b5b-444f-bc39-cdfa2523d4bc
+
+quantity temperature category
+3.0 -0.02885 kitchen
+3.0 -0.02885 vegetables
+0.0 -0.02885 baby products
+0.0 -0.02885 beverages
+0.0 -0.02885 pets
+
+merged df = merged _df.merge(product_ price, on="product id",
+
+how="1left")
+merged _df.head()
+
+timestamp
+0 2022-03-01 09:00:00
+1 2022-03-01 09:00:00
+2 2022-03-01 09:00:00
+3 2022-03-01 09:00:00
+4 2022-03-01 09:00:00
+
+estimated stock pct
+unit_price
+
+0 0.89
+11.19
+1 0.14
+1.49
+2 0.67
+14.19
+3 0.82
+20.19
+4 0.05
+8.19
+
+merged _df.info()
+
+product _id \
+00e120bb-89d6-4df5-bc48-a051148e3d03
+01f3cdd9-8e9e-4dff-9b5c-69698a0388d0
+01ff0803-ae73-4234-971d-5713c97b7f4b
+0363eb21-8c74-47el-a216-c37e565e5ceb
+03f0b20e-3b5b-444f-bc39-cdfa2523d4bc
+
+quantity temperature category
+3.0 -0.02885 kitchen
+3.0 -0.02885 vegetables
+0.0 -0.02885 baby products
+0.0 -0.02885 beverages
+0.0 -0.02885 pets
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 10845 entries, 0 to 10844
+Data columns (total 7 columns):
+
+# Column
+
+0 timestamp
+
+1 product_id
+2
+
+3 quantity
+
+4 temperature
+5 category
+
+Non-Null Count Dtype
+
+10845 non-null datetime64[ns]
+10845 non-null object
+
+estimated stock pct 10845 non-null float64
+
+10845 non-null float64
+10845 non-null float64
+10845 non-null object
+6 unit price 10845 non-null float64
+dtypes: datetime64[ns](1l), float64(4), object(2)
+memory usage: 677.8+ KB
+
+Now we have our table with 2 extra features!
+
+Section 6 - Feature engineering
+
+We have our cleaned and merged data. Now we must transform this data so that the
+columns are in a suitable format for a machine learning model. In other terms, every
+column must be numeric. There are some models that will accept categorical features, but
+for this exercise we will use a model that requires numeric features.
+
+Let's first engineer the timestamp column. In it's current form, it is not very useful for a
+machine learning model. Since it's a datetime datatype, we can explode this column into
+day of week, day of month and hour to name a few.
+
+merged _df[ timestamp day of month'] = merged df['timestamp'].dt.day
+merged _df['timestamp day of week'] =
+
+merged _df['timestamp'].dt.dayofweek
+
+merged _df['timestamp_hour'] = merged df['timestamp'].dt.hour
+
+merged _df.drop(columns=["'timestamp'], inplace=True)
+
+merged _df.head()
+
+product_id estimated stock pct quantity
+
+\
+0 00el20bb-89d6-4df5-bc48-a051148e3d03 0.89 3.0
+1 01f3cdd9-8e9e-4dff-9b5c-69698a0388d0 0.14 3.0
+2 01ffo803-ae73-4234-971d-5713c97b7f4b 0.67 0.0
+3 0363eb21-8c74-47el-a216-c37e565e5ceb 0.82 0.0
+4 03f0b20e-3b5b-444f-bc39-cdfa2523d4bc 0.05 0.0
+temperature category wunit_price timestamp_day_of_month \
+0 -0.02885 kitchen 11.19 1
+1 -0.02885 vegetables 1.49 1
+2 -0.02885 baby products 14.19 1
+3 -0.02885 beverages 20.19 1
+4 -0.02885 pets 8.19 1
+timestamp_day of week timestamp weekday timestamp hour
+0 1 1 9
+1 1 9
+
+2 1 1 9
+3 1
+4 1
+
+The next column that we can engineer is the category column. In its current form it is
+categorical. We can convert it into numeric by creating dummy variables from this
+
+categorical column.
+
+1 9
+1 9
+
+A dummy variable is a binary flag column (1's and 0's) that indicates whether a row fits a
+
+particular value of that column. For example, we can create a dummy column called
+
+category_pets, which will contain a 1 if that row indicates a product which was included
+
+within this category and a 0 if not.
+
+merged df = pd.get_ dummies (merged df, columns=['category'])
+
+merged _df.head()
+product_id
+
+0 00e120bb-89d6-4df5-bc48-a051148e3d03
+1 01f3cdd9-8e9e-4dff-9b5c-69698a0388d0
+2 01ff0803-2e73-4234-971d-5713c97b7f4b
+3 0363eb21-8c74-47el-a216-c37e565e5ceb
+
+4 03f0b20e-3b5b-444f-bc39-cdfa2523d4bc
+
+estimated stock pct quantity
+
+0.89
+
+0.82
+
+0.05
+
+temperature unit price timestamp_day_ of month
+
+timestamp day of week \
+
+0 -0.02885 11.19
+I -0.02885 1.49
+3 -0.02885 14.19
+3 -0.02885 20.19
+: -0.02885 8.19
+
+1
+
+1
+
+timestamp_weekday timestamp _hour category baby products
+
+PWN O
+al el el
+O OW WOWow
+
+category_meat category_medicine category_packaged foods
+0 0
+
+OOH OO
+
+0
+
+\
+
+3.0
+
+3.0
+
+0.0
+
+0.0
+
+0.0
+1 0 0
+
+2 0 0
+
+3 0 0
+
+4 0 0
+category personal care category pets
+
+\
+
+0 0 0
+
+1 0 0
+
+2 0 0
+
+3 0 0
+
+4 0 1
+
+[cNoNoNo]
+
+category_seafood category_snacks category_spices and herbs
+
+APWNRO
+[coo oNo]
+[coo oNo]
+
+category_vegetables
+
+PWN O
+[oNo Nol Tio)
+
+[5 rows x 31 columns]
+merged _df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 10845 entries, 0 to 10844
+Data columns (total 31 columns):
+
+# Column
+
+0 product_id 10845
+1 estimated stock pct 10845
+2 quantity 10845
+3 temperature 10845
+4 unit_price 10845
+5 timestamp_day_ of month 10845
+6  timestamp_day_ of week 10845
+7  timestamp_weekday 10845
+8 timestamp_hour 10845
+
+Non-Null Count
+
+non-null
+non-null
+non-null
+non-null
+non-null
+non-null
+non-null
+non-null
+non-null
+
+float64
+float64
+float64
+int64
+int64
+int64
+int64
+
+[coo oNo]
+
+\
+
+category_refrigerated items
+
+0
+
+0
+
+0
+9 category_baby products 10845 non-null wuint8
+
+10 category baked goods 10845 non-null wuint8
+11 category_baking 10845 non-null wuint8
+12 category beverages 10845 non-null wuint8
+13 category _canned foods 10845 non-null wuint8
+14 category_cheese 10845 non-null wuint8
+15 category cleaning products 10845 non-null wuint8
+16 category condiments and sauces 10845 non-null wuint8
+17 category dairy 10845 non-null wuint8
+18 category_frozen 10845 non-null wuint8
+19 category fruit 10845 non-null wuint8
+20 category_kitchen 10845 non-null wuint8
+21 category _meat 10845 non-null wuint8
+22 category_medicine 10845 non-null wuint8
+23 category_packaged foods 10845 non-null wuint8
+24 category_personal care 10845 non-null wuint8
+25 category_pets 10845 non-null wuint8
+26 category_refrigerated items 10845 non-null wuint8
+27 category_seafood 10845 non-null wuint8
+28 category_snacks 10845 non-null wuint8
+29 category_spices and herbs 10845 non-null wuint8
+30 category vegetables 10845 non-null wuint8
+
+dtypes: float64(4), int64(4), object(l), uint8(22)
+memory usage: 1.1+ MB
+
+Looking at the latest table, we only have 1 remaining column which is not numeric. This is
+the product_id.
+
+Since each row represents a unique combination of product_id and timestamp by hour, and
+the product_id is simply an ID column, it will add no value by including it in the predictive
+model. Hence, we shall remove it from the modeling process.
+
+merged_df.drop(columns=["'product_id'], inplace=True)
+merged _df.head()
+
+estimated stock pct quantity temperature unit price \
+
+0 0.89 3.0 -0.02885 11.19
+1 0.14 3.0 -0.02885 1.49
+2 0.67 0.0 -0.02885 14.19
+3 0.82 0.0 -0.02885 20.19
+4 0.05 0.0 -0.02885 8.19
+
+timestamp_day_of month timestamp_day of week timestamp weekday \
+
+PWN O
+al el el
+al el el
+al el el
+
+timestamp_hour category baby products category baked
+0 9 0 0
+1 9 0 0
+2 9 1 0
+3 9 0 0
+4 9 0 0
+
+category_meat category _medicine category_packaged foods \
+
+0 0
+
+1 0 0 0
+
+2 0 0 0
+
+3 0 0 0
+
+4 0 0 0
+category_personal care category _pets category _refrigerated items
+
+\
+
+0 0 0 0
+
+1 0 0 0
+
+2 0 0 0
+
+3 0 0 0
+
+4 0 1 0
+
+category_seafood category _snacks category _spices and herbs \
+0
+
+PWN O
+[oNoNoNoNo]
+[oN oo No No]
+[oN oo No No]
+
+category_vegetables
+
+PWN O
+[oN o Nol Tico]
+
+[5 rows x 30 columns]
+This feature engineering was by no means exhaustive, but was enough to give you an
+example of the process followed when engineering the features of a dataset. In reality, this
+is an iterative task. Once you've built a model, you may have to revist feature engineering in
+order to create new features to boost the predictive power of a machine learning model.
+
+Section 7 - Modelling
+
+Now it is time to train a machine learning model. We will use a supervised machine
+learning model, and we will use estimated stock pct as the target variable, since the
+problem statement was focused on being able to predict the stock levels of products on an
+hourly basis.
+
+Whilst training the machine learning model, we will use cross-validation, which is a
+technique where we hold back a portion of the dataset for testing in order to compute how
+well the trained machine learning model is able to predict the target variable.
+
+Finally, to ensure that the trained machine learning model is able to perform robustly, we
+will want to test it several times on random samples of data, not just once. Hence, we will
+use a K-fold strategy to train the machine learning model on K (K is an integer to be
+decided) random samples of the data.
+
+First, let's create our target variable y and independent variables X
+
+X = merged_df.drop(columns=['estimated stock pct'])
+y = merged _df['estimated stock pct']
+
+print (X.shape)
+
+print (y.shape)
+
+(10845, 29)
+(10845,)
+
+This shows that we have 29 predictor variables that we will train our machine learning
+model on and 10845 rows of data.
+
+Now let's define how many folds we want to complete during training, and how much of
+the dataset to assign to training, leaving the rest for test.
+
+Typically, we should leave at least 20-30% of the data for testing.
+
+K= 10
+split = 0.75
+
+For this exercise, we are going to use a RandomForestRegressor model, which is an
+instance of a Random Forest. These are powerful tree based ensemble algorithms and are
+particularly good because their results are very interpretable.
+
+We are using a regression algorithm here because we are predicting a continuous
+numeric variable, that is, estimated_stock pct. A classification algorithm would be
+suitable for scenarios where you're predicted a binary outcome, e.g. True/False.
+We are going to use a package called scikit-learn for the machine learning algorithm, so
+first we must install and import this, along with some other functions and classes that can
+help with the evaluation of the model.
+
+Ipip install scikit-learn
+
+Requirement already satisfied: scikit-learn in
+/usr/local/lib/python3.7/dist-packages (1.0.2)
+
+Requirement already satisfied: threadpoolctl>=2.0.0 in
+/usr/local/lib/python3.7/dist-packages (from scikit-learn) (3.1.0)
+Requirement already satisfied: numpy>=1.14.6 in
+/usr/local/lib/python3.7/dist-packages (from scikit-learn) (1.21.6)
+Requirement already satisfied: scipy>=1.1.0 in
+/usr/local/lib/python3.7/dist-packages (from scikit-learn) (1.4.1)
+Requirement already satisfied: joblib>=0.11 in
+/usr/local/lib/python3.7/dist-packages (from scikit-learn) (1.1.0)
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model selection import train_test split
+from sklearn.metrics import mean_absolute error
+
+from sklearn.preprocessing import StandardScaler
+
+And now let's create a loop to train K models with a 75/25% random split of the data each
+time between training and test samples
+
+accuracy = []
+for fold in range (0, K):
+
+# Instantiate algorithm
+model = RandomForestRegressor()
+scaler = StandardScaler()
+
+# Create training and test samples
+X_ train, X test, y train, y_ test = train_test split(X, vy,
+train_size=split, random _state=42)
+
+# Scale X data, we scale the data because it helps the algorithm to
+converge
+
+# and helps the algorithm to not be greedy with large values
+
+scaler. fit(X_train)
+
+X train = scaler.transform(X_ train)
+
+X test = scaler.transform(X_ test)
+
+# Train model
+trained model = model.fit(X train, y train)
+
+# Generate predictions on test sample
+y_pred = trained _model.predict(X_ test)
+# Compute accuracy, using mean absolute error
+
+mae = mean_absolute_error(y_true=y test, y pred=y pred)
+accuracy. append (mae)
+
+print(f"Fold {fold + 1}: MAE = {mae:.3T}")
+
+print (f"Average MAE: {(sum(accuracy) / len(accuracy)):.2f}")
+
+Fold 1: MAE = 0.236
+Fold 2: MAE = 0.236
+Fold 3: MAE = 0.236
+Fold 4: MAE = 0.237
+Fold 5: MAE = 0.237
+Fold 6: MAE = 0.236
+Fold 7: MAE = 0.237
+Fold 8: MAE = 0.236
+Fold 9: MAE = 0.237
+
+Fold 10: MAE = 0.237
+Average MAE: 0.24
+
+Note, the output of this training loop may be slightly different for you if you have prepared
+the data differently or used different parameters!
+
+This is very interesting though. We can see that the mean absolute error (MAE) is
+almost exactly the same each time. This is a good sign, it shows that the performance of the
+model is consistent across different random samples of the data, which is what we want. In
+other words, it shows a robust nature.
+
+The MAE was chosen as a performance metric because it describes how closely the machine
+learning model was able to predict the exact value of estimated stock pct.
+
+Even though the model is predicting robustly, this value for MAE is not so good, since the
+average value of the target variable is around 0.51, meaning that the accuracy as a
+percentage was around 50%. In an ideal world, we would want the MAE to be as low as
+possible. This is where the iterative process of machine learning comes in. At this stage,
+since we only have small samples of the data, we can report back to the business with these
+findings and recommend that the the dataset needs to be further engineered, or more
+datasets need to be added.
+
+As a final note, we can use the trained model to intepret which features were signficant
+when the model was predicting the target variable. We will use matplotlib and numpy to
+visualuse the results, so we should install and import this package.
+
+Ipip install matplotlib
+Ipip install numpy
+
+Requirement already satisfied: matplotlib in
+/usr/local/lib/python3.7/dist-packages (3.2.2)
+
+Requirement already satisfied: pyparsing!=2.0.4,!'=2.1.2,!
+=2.1.6,>=2.0.1 in /usr/local/lib/python3.7/dist-packages (from
+matplotlib) (3.0.8)
+Requirement already satisfied: numpy>=1.11 in
+/usr/local/lib/python3.7/dist-packages (from matplotlib) (1.21.6)
+Requirement already satisfied: python-dateutil>=2.1 in
+/usr/local/lib/python3.7/dist-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: cycler>=0.10 in
+/usr/local/lib/python3.7/dist-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in
+/usr/local/lib/python3.7/dist-packages (from matplotlib) (1.4.2)
+Requirement already satisfied: typing-extensions in
+/usr/local/lib/python3.7/dist-packages (from kiwisolver>=1.0.1-
+>matplotlib) (4.2.0)
+
+Requirement already satisfied: six>=1.5 in
+/usr/local/lib/python3.7/dist-packages (from python-dateutil>=2.1-
+>matplotlib) (1.15.0)
+
+Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-
+packages (1.21.6)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+features = [i.split(" ")[0] for i in X.columns]
+importances = model. feature_importances_
+indices = np.argsort(importances)
+
+fig, ax = plt.subplots(figsize=(10, 20))
+
+plt.title( Feature Importances')
+
+plt.barh(range(len(indices)), importances[indices], color='b",
+align="center")
+
+plt.yticks(range(len(indices)), [features[i] for i in indices])
+plt.xlabel('Relative Importance")
+
+plt.show()
+Feature Importances
+
+unit_price
+
+temperature
+
+timestamp_hour
+
+quantity
+
+timestamp_day_of month
+
+timestamp_weekday
+
+timestamp_day_of_week
+
+category_frozen
+
+category_personal care
+
+category_baked goods
+
+category _beverages
+
+category_cheese
+
+category_cleaning products
+
+category_baby products
+
+category _baking
+
+category_condiments and sauces
+
+category_canned foods
+
+category refrigerated items
+
+category_kitchen
+
+category_seafood
+
+category _spices and herbs
+
+category _dairy
+
+category _packaged foods
+
+category_pets
+
+category_medicine
+
+category_meat
+
+category_snacks
+
+category_vegetables
+
+category_fruit
+
+015 020 0.25
+Relative Importance
+
+This feature importance visualisation tells us:
+
++ The product categories were not that important
++ The unit price and temperature were important in predicting stock
++ The hour of day was also important for predicting stock
+
+With these insights, we can now report this back to the business
